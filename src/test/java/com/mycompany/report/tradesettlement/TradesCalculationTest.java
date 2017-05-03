@@ -10,6 +10,7 @@ import java.util.LinkedList;
 import java.util.Locale;
 import java.util.Map;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class TradesCalculationTest {
@@ -17,7 +18,8 @@ public class TradesCalculationTest {
 	private LinkedList<Trade> trades = null;
 	private DateTimeFormatter formatter = DateTimeFormatter.ofPattern( "dd MMM yyyy", Locale.ENGLISH );
 
-	public TradesCalculationTest() {
+	@Before
+	public void initialize() {
 		//set up test date
 		trades = new LinkedList<Trade>( Arrays.asList( 
 			new Trade("foo", "B", 0.20, "SGP", "01 Jan 2017", "02 Jan 2017", 200, 100.25), //"02 Jan 2017" Monday 
