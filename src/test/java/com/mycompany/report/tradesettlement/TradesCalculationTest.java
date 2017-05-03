@@ -20,7 +20,7 @@ public class TradesCalculationTest {
 
 	@Before
 	public void initialize() {
-		//set up test date
+		//set up test data
 		trades = new LinkedList<Trade>( Arrays.asList( 
 			new Trade("foo", "B", 0.20, "SGP", "01 Jan 2017", "02 Jan 2017", 200, 100.25), //"02 Jan 2017" Monday 
 			new Trade("sai", "S", 0.50, "CAN", "01 Jan 2017", "07 Jan 2017", 150, 99.75), //"07 Jan 2017" Saturday
